@@ -23,8 +23,8 @@ class ViewController: UIViewController, UITableViewDataSource, UISearchBarDelega
     
     func requestMusic(keyword: String) async -> MusicResponse? {
         let urlString = "https://itunes.apple.com/search?term=\(keyword)&entity=song&country=JP&lang=ja_jp&limit=20"
-        guard let encodeUrlString = urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) else { return nil }
-        guard let url = URL(string: encodeUrlString) else { return nil }
+        guard let encodedUrlString = urlString.addingPercentEncoding(withAllowedCharacters: .urlQueryAllowed) else { return nil }
+        guard let url = URL(string: encodedUrlString) else { return nil }
         
         do {
             let (data, response) = try await URLSession.shared.data(from: url)
