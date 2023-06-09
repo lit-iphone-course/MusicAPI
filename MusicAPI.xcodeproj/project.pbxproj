@@ -13,6 +13,7 @@
 		EBDBDE022A336C8D00814FDC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBDBDE002A336C8D00814FDC /* Main.storyboard */; };
 		EBDBDE042A336C8F00814FDC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EBDBDE032A336C8F00814FDC /* Assets.xcassets */; };
 		EBDBDE072A336C8F00814FDC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EBDBDE052A336C8F00814FDC /* LaunchScreen.storyboard */; };
+		EBDBDE0F2A33704200814FDC /* Music.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBDBDE0E2A33704200814FDC /* Music.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		EBDBDE032A336C8F00814FDC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EBDBDE062A336C8F00814FDC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EBDBDE082A336C8F00814FDC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EBDBDE0E2A33704200814FDC /* Music.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Music.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				EBDBDDFA2A336C8D00814FDC /* AppDelegate.swift */,
 				EBDBDDFC2A336C8D00814FDC /* SceneDelegate.swift */,
 				EBDBDDFE2A336C8D00814FDC /* ViewController.swift */,
+				EBDBDE0E2A33704200814FDC /* Music.swift */,
 				EBDBDE002A336C8D00814FDC /* Main.storyboard */,
 				EBDBDE032A336C8F00814FDC /* Assets.xcassets */,
 				EBDBDE052A336C8F00814FDC /* LaunchScreen.storyboard */,
@@ -141,6 +144,7 @@
 				EBDBDDFF2A336C8D00814FDC /* ViewController.swift in Sources */,
 				EBDBDDFB2A336C8D00814FDC /* AppDelegate.swift in Sources */,
 				EBDBDDFD2A336C8D00814FDC /* SceneDelegate.swift in Sources */,
+				EBDBDE0F2A33704200814FDC /* Music.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
