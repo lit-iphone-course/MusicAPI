@@ -9,7 +9,7 @@ import Foundation
 
 struct Music: Codable {
     var trackName: String
-    var artworkUrl60: String
+    var artworkUrl60: URL
 }
 
 struct MusicResponse: Codable {

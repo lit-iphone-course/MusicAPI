@@ -43,9 +43,7 @@ class ViewController: UIViewController, UITableViewDataSource, UISearchBarDelega
         }
     }
     
-    func getImage(urlString: String) async -> UIImage? {
-        guard let url = URL(string: urlString) else { return nil }
-        
+    func getImage(url: URL) async -> UIImage? {
         do {
             let (data, _) = try await URLSession.shared.data(from: url)
             guard let image = UIImage(data: data) else { return nil }
@@ -64,7 +62,7 @@ class ViewController: UIViewController, UITableViewDataSource, UISearchBarDelega
             
             artworks = []
             for music in musicList {
-                let image = await getImage(urlString: music.artworkUrl60)
+                let image = await getImage(url: music.artworkUrl60)
                 artworks.append(image)
             }
             
