@@ -18,6 +18,7 @@ class ViewController: UIViewController, UITableViewDataSource, UISearchBarDelega
     override func viewDidLoad() {
         super.viewDidLoad()
     
+        searchBar.delegate = self
         tableView.dataSource = self
     }
     
