@@ -57,7 +57,7 @@ class ViewController: UIViewController, UITableViewDataSource, UISearchBarDelega
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {
         let text = searchBar.text ?? ""
         Task {
-            let response = await requestMusic(keyword: text)
+            let response: MusicResponse? = await requestMusic(keyword: text)
             guard let musicResult = response else { return }
             musicList = musicResult.results
             
@@ -78,8 +78,7 @@ class ViewController: UIViewController, UITableViewDataSource, UISearchBarDelega
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "Cell", for: indexPath)
         var content = cell.defaultContentConfiguration()
-        let image = artworks[indexPath.row]
-        content.image = image
+        content.image = artworks[indexPath.row]
         content.text = musicList[indexPath.row].trackName
         cell.contentConfiguration = content
         
