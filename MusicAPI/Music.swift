@@ -7,11 +7,11 @@
 
 import Foundation
 
+struct MusicResponse: Codable {
+    var results: [Music]
+}
+
 struct Music: Codable {
     var trackName: String
     var artworkUrl60: URL
-}
-
-struct MusicResponse: Codable {
-    var results: [Music]
 }

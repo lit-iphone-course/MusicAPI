@@ -31,13 +31,13 @@ class ViewController: UIViewController, UITableViewDataSource, UISearchBarDelega
             let (data, response) = try await URLSession.shared.data(from: url)
             guard let httpResponse = response as? HTTPURLResponse else { return nil }
             
-            switch httpResponse.statusCode {
-            case 200:
+            if httpResponse.statusCode == 200 {
                 let decodedData = try JSONDecoder().decode(MusicResponse.self, from: data)
                 return decodedData
-            default:
+            } else {
                 return nil
             }
+            
         } catch {
             print(error)
             return nil
